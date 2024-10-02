@@ -11,7 +11,7 @@ MongooseConnect('mongodb://127.0.0.1:27017/RealWorld')
 .then(()=> console.log('db connected'))
 .catch((err)=> console.error("error: ", err))
 
-app.use('/user', routes)
+app.use('/api', routes)
 
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`);
